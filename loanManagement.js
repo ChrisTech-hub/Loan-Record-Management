@@ -98,6 +98,6 @@ function login() {
 function logout() {
      setTimeout(()=>{
         document.body.classList.add("bodytransition");
-        window.location.href = "login_loanManagement.html"; 
+        window.location.href = "index.html"; 
     }, 800);
 }
