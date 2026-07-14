@@ -14,6 +14,7 @@
     background-repeat: no-repeat;
 
     opacity: 1;
+    overflow: hidden;
     transition: all 0.3s ease;
 }
 
@@ -79,6 +80,13 @@ hr{
     width: 20px;
     height: 20px;
     color: #000;
+}
+
+.header-hero{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
 }
 
 
@@ -163,6 +171,90 @@ header #log-button:hover{
     background: #223ccebd;
 }
 
+.hero-section{
+    width: calc(100vw - 260px);
+    position: fixed;
+    right: 0;
+    top: 63px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    height: calc(100vh - 60px);
+}
+
+.hero-section img{
+    width: 700px;
+    height: auto;
+}
+
+.web-details{
+    width: 50%;
+    height: 70%;
+    margin-left: 20px;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.web-details h1{
+    text-align: center;
+    font-size: 50px;
+    color: #0a034b;
+}
+
+.web-details .p-details{
+    text-align: center;
+    font-style: oblique;
+    margin-bottom: 60px;
+}
+
+.feature-span{
+    width: 110%;
+    margin-left: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    text-align: center;
+    gap: 10px;
+}
+
+.feature-span .features{
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.features img{
+    width: 30px;
+    height: 30px;
+}
+
+.features h4{
+    font-size: 14px;
+}
+
+.features p{
+    font-size: 12x;
+    font-weight: 100;
+}
+
+.web-details span{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.web-details span img{
+    width: 25px;
+    height: 30px;
+}
+
+
 #alertNotif{
     position: fixed;
     display: none;
@@ -170,14 +262,49 @@ header #log-button:hover{
     left: 50%;
     transform: translate(-50%, -50%);
 
-    background: #7e7dd1;
-    padding: 25px 30px;
+    background: linear-gradient(45deg, #ECF5FF, #fff);
+    color: #FF0000;
+    padding: 35px 45px;
 
     border: none;
     border-radius: 10px;
-    box-shadow: 0 0 5px rgba(0, 0, 0, 0.3);
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
 
     z-index: 2;
+}
+
+#verifier{
+    font-size: 12px;
+}
+
+#loader{
+    position: fixed;
+    
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    padding:  20px;
+    border: none;
+    border-radius: 10px;
+    background: #ECF5FF;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.5);
+
+    gap: 10px;
+}
+
+.loader p{
+    font-size: 10px;
+}
+
+#loader img{
+    width: 45px;
+    height: 45px;
 }
 
 #login-container{
@@ -209,6 +336,11 @@ header #log-button:hover{
     background: #ECF5FF;
 
     gap: 15px;
+    transition: all 0.5s ease;
+}
+
+.transitions{
+    transition: all 0.5s ease;
 }
 
 .login .fa-close{
