@@ -44,47 +44,86 @@
         </div>
     </div>
 
-    <header>
-        <div class="search-container">
-            <input type="text" placeholder="Search Borrower..." id="search">
-            <img src="https://github.com/ChrisTech-hub/icons/blob/main/search.png?raw=true">
+
+
+    <div class="sorting">
+
+        <aside class="navbar-aside">
+            <h1 class="logo">LOAN RECORD MANAGEMENT</h1>
+
+            <hr>
+
+            <nav class="navbars">
+                <ul>
+                    <li class="nav-list active"><img src="https://github.com/ChrisTech-hub/icons/blob/main/home.png?raw=true" class="nav-image"><span>Dashboard</span></li>
+                    <li class="nav-list"><img src="https://github.com/ChrisTech-hub/icons/blob/main/payment-method.png?raw=true" class="nav-image"><span>Borrower</span></li>
+                    <li class="nav-list"><img src="https://github.com/ChrisTech-hub/icons/blob/main/payment-method.png?raw=true" class="nav-image"><span>Payment</span></li>
+                    <li class="nav-list"><img src="https://github.com/ChrisTech-hub/icons/blob/main/file.png?raw=true" class="nav-image"><span>Information</span></li>
+                    <li class="nav-list"><img src="https://github.com/ChrisTech-hub/icons/blob/main/data.png?raw=true" class="nav-image"><span>Data</span></li>
+                </ul>
+            </nav>
+
+            <hr>
+
+            <div class="users">
+                <ul id="users">No Users Available</ul>
+            </div>
+     </aside>
+
+
+        <div class="header-hero">
+            <header>
+                <div class="search-container">
+                    <input type="text" placeholder="Search Borrower..." id="search">
+                    <img src="https://github.com/ChrisTech-hub/icons/blob/main/search.png?raw=true">
+                </div>
+
+                <div class="menu">
+                    <img src="https://github.com/ChrisTech-hub/icons/blob/main/sort.png?raw=true" id="sort">
+                    <label for="sort">Sort By</label>
+
+                    <img src="https://github.com/ChrisTech-hub/icons/blob/main/settings.png?raw=true" id="settings">
+                    <label for="settings">Settings</label>
+
+                    <img src="https://github.com/ChrisTech-hub/icons/blob/main/user.png?raw=true" id="user">
+                    <label for="sort">Me</label>
+                </div>
+
+                <button id="login-button" class="log-button">Log-In</button>
+            </header>
+
+            <div class="hero-section">
+                <div class="web-details">
+                    <h1 classs="title">LOAN RECORD MANAGEMENT</h1>
+                    <p class="p-details">A simple and effiecient way to manage loans, borrowers, payments, and records in one place.</p>
+
+                    <div class="feature-span">
+                        <span class="features">
+                            <img src="https://github.com/ChrisTech-hub/icons/blob/main/personal-data.png?raw=true">
+                            <h4>Manage Borrowers</h4>
+                            <p>Add, update, and track borrower information.</p>
+                        </span>
+
+                        <span class="features">
+                            <img src="https://github.com/ChrisTech-hub/icons/blob/main/transaction-history.png?raw=true">
+                            <h4>Track Loans</h4>
+                            <p>Monitor loan details, balances and due dates.</p>
+                        </span>
+
+                        <span class="features">
+                            <img src="https://github.com/ChrisTech-hub/icons/blob/main/time.png?raw=true">
+                            <h4>View Reports</h4>
+                            <p>Generate reports and view loan summaries.</p>
+                        </span>
+                    </div>
+                </div>
+
+                <img src="https://github.com/ChrisTech-hub/LOANMANAGEMENT/blob/main/4570ff5a-381c-472a-825f-6665cb987c17.png?raw=true">
+            </div>
         </div>
-
-        <div class="menu">
-            <img src="https://github.com/ChrisTech-hub/icons/blob/main/sort.png?raw=true" id="sort">
-            <label for="sort">Sort By</label>
-
-            <img src="https://github.com/ChrisTech-hub/icons/blob/main/settings.png?raw=true" id="settings">
-            <label for="settings">Settings</label>
-
-            <img src="https://github.com/ChrisTech-hub/icons/blob/main/user.png?raw=true" id="user">
-            <label for="sort">Me</label>
-        </div>
-
-        <button id="login-button" class="log-button">Log-In</button>
-    </header>
     
-    <aside class="navbar-aside">
-        <h1 class="logo">LOAN RECORD MANAGEMENT</h1>
-
-        <hr>
-
-        <nav class="navbars">
-            <ul>
-                <li class="nav-list active"><img src="https://github.com/ChrisTech-hub/icons/blob/main/home.png?raw=true" class="nav-image"><span>Dashboard</span></li>
-                <li class="nav-list"><img src="https://github.com/ChrisTech-hub/icons/blob/main/payment-method.png?raw=true" class="nav-image"><span>Borrower</span></li>
-                <li class="nav-list"><img src="https://github.com/ChrisTech-hub/icons/blob/main/payment-method.png?raw=true" class="nav-image"><span>Payment</span></li>
-                <li class="nav-list"><img src="https://github.com/ChrisTech-hub/icons/blob/main/file.png?raw=true" class="nav-image"><span>Information</span></li>
-                <li class="nav-list"><img src="https://github.com/ChrisTech-hub/icons/blob/main/data.png?raw=true" class="nav-image"><span>Data</span></li>
-            </ul>
-        </nav>
-
-        <hr>
-
-        <div class="users">
-            <ul id="users">No Users Available</ul>
-        </div>
-    </aside>
+    
+    </div>
 
     <script src="loanManagement.js"></script>
 </body>
