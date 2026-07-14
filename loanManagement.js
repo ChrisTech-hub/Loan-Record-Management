@@ -5,6 +5,9 @@ const alertNotif = document.getElementById("alertNotif");
 const closeLogin = document.getElementById("close-login");
 const showPass = document.getElementById("showPass");
 const hidePass = document.getElementById("hidePass");
+const loader = document.getElementById("loader");
+
+loader.style.display = "none";
 
 navs.forEach(nav => {
     nav.addEventListener("click", () => {
@@ -84,7 +87,6 @@ function login() {
             verifier.style.color = "#00FF00";
          
             setTimeout(()=>{
-                document.body.classList.add("bodytransition");
                 window.location.href = "home.html"; 
             }, 1000)
         
@@ -96,8 +98,12 @@ function login() {
 }
 
 function logout() {
+
+    
+
+    loader.style.display = "flex";
+
      setTimeout(()=>{
-        document.body.classList.add("bodytransition");
-        window.location.href = "index.html"; 
-    }, 800);
+        window.location.href = "login_loanManagement.html"; 
+    }, 1200);
 }
