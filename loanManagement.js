@@ -100,6 +100,6 @@ const loader = document.getElementById("loader");
     loader.style.display = "flex";
 
      setTimeout(()=>{
-        window.location.href = "login_loanManagement.html"; 
+        window.location.href = "index.html"; 
     }, 1200);
 }
