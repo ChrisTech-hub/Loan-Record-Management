@@ -5,9 +5,6 @@ const alertNotif = document.getElementById("alertNotif");
 const closeLogin = document.getElementById("close-login");
 const showPass = document.getElementById("showPass");
 const hidePass = document.getElementById("hidePass");
-const loader = document.getElementById("loader");
-
-loader.style.display = "none";
 
 navs.forEach(nav => {
     nav.addEventListener("click", () => {
@@ -99,8 +96,7 @@ function login() {
 
 function logout() {
 
-    
-
+const loader = document.getElementById("loader");
     loader.style.display = "flex";
 
      setTimeout(()=>{
